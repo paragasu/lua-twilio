@@ -22,6 +22,6 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        ["payssion"] = "payssion.lua",
+        ["twilio"] = "twilio.lua",
     }
 }
