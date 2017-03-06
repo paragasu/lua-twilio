@@ -23,7 +23,12 @@ function m.send(phone_number, messages)
   }
   local headers  = { ['Content-Type'] = 'application/x-www-form-urlencoded' }
   local response = requests.post({ url=api_url, auth=auth, data=m.urlencode(data), headers = headers })
-  return response.json()
+  local res = response.json()
+  if res.status == "queued" then 
+    return true, nil
+  else
+    return nil, res.message
+  end 
 end
 
 -- todo: make sure message less than 150chars or 70 chars for unicode

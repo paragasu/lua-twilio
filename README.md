@@ -22,8 +22,8 @@ Lua twilio sms api.
 
 local twilio = require 'twilio'
 local sms = twilio.new(config.account_sid, config.auth_token)
-local ok, err = sms.send('+60123456789', 'Hello World')
-if not ok then error("Failed to send sms") end
+local ok, err  = sms.send('+60123456789', 'Hello World')
+if not ok then error(err) end
 
 ```
 
