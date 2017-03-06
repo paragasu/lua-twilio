@@ -27,6 +27,9 @@ if not ok then error(err) end
 
 ```
 
+The recipient phone number need to be validated in the trial mode.
+
+
 # Reference
 
 [Twilio API](https://www.twilio.com/docs/api/rest/sending-messages)
