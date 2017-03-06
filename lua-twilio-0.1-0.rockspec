@@ -15,8 +15,7 @@ description = {
 
 dependencies = {
     "lua = 5.1",
-    "lua-requests",
-    "md5"
+    "lua-requests"
 }
 
 build = {
