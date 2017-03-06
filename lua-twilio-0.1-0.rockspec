@@ -2,7 +2,8 @@ package = "lua-twilio"
 version = "0.1-0"
 
 source = {
-    url = "git://github.com/paragasu/lua-twilio.git"
+    url = "git://github.com/paragasu/lua-twilio.git",
+    tag = "0.1-0"
 }
 
 description = {
